@@ -1,0 +1,55 @@
+- name: Home
+  # Optionally, if you only have a single page you can hide the desktop navigation for a cleaner look
+  # hide-desktop-navigation: true
+  columns:
+    - size: full
+      widgets:
+        - type: group
+          widgets:
+            - type: rss
+              limit: 20
+              collapse-after: 10
+              cache: 12h
+              feeds:
+                - url: https://selfh.st/rss/
+                  title: selfh.st
+                - url: https://www.xda-developers.com/feed/tag/rss/
+                  title: XDA Developers
+                - url: https://feeds.macrumors.com/MacRumors-All
+                  title: MacRumors
+                - url: https://www.androidauthority.com/news/feed
+                  title: AndroidAuthority
+                - url: https://itsfoss.com/rss/
+                  title: ItsFoss
+            - type: hacker-news
+              collapse-after: 10
+              limit: 20
+            - type: lobsters
+              collapse-after: 10
+              limit: 20
+    - size: full
+      widgets:
+        - type: group
+          widgets:
+            - type: reddit
+              subreddit: technology
+              show-thumbnails: true
+              collapse-after: 7
+              limit: 10
+            - type: reddit
+              subreddit: selfhosted
+              show-thumbnails: true
+              collapse-after: 7
+              limit: 10
+            - type: videos
+              style: grid-cards
+              limit: 10
+              collapse-after: 7
+              channels:
+                - UCsBjURrPoezykLs9EqgamOA # Fireship
+                - UCBJycsmduvYEL83R_U4JriQ # Marques Brownlee
+                - UCnC8SAZzQiBGYVSKZ_S3y4Q # Nikhil Kamath
+                - UCUyeluBRhGPCW4rPe_UvBZQ # The PrimeTime
+                - UCVk4b-svNJoeytrrlOixebQ # TheVimeagen
+                - UC8ENHE5xdFSwx71u3fDH5Xw # ThePrimeagen
+    
