@@ -27,22 +27,12 @@
             - type: lobsters
               collapse-after: 10
               limit: 20
-    - size: full
+    - size: small
       widgets:
         - type: group
           widgets:
-            - type: reddit
-              subreddit: technology
-              show-thumbnails: true
-              collapse-after: 7
-              limit: 10
-            - type: reddit
-              subreddit: selfhosted
-              show-thumbnails: true
-              collapse-after: 7
-              limit: 10
             - type: videos
-              style: grid-cards
+              style: vertical-list
               limit: 10
               collapse-after: 7
               channels:
